@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2em;
+    }
+
+    /*Estilos cards global*/
+    .card {
+        width: 40em;
+    }
+
+    /*copy-paste container*/
+    .text-to-copy {
+  border: solid black 2px;
+  padding: 1em;
+  box-sizing: border-box;
+  max-width: 40em;
+  max-height: 20em;
+  overflow: auto;
+  border-radius: 5px;
+}
+    .container-text-to-copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+</style>
+
+<body>
+
+    <div class="card">
+        <img src="https://www.arsys.es/blog/file/uploads/2017/03/Caracteres-especiales-HTML.jpg" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Código HTML y CSS</h5>
+            <p class="card-text">Nos encontramos un código HTML y otro CSS los cuales deberemos copiar en esta página,
+                la primera prueba es discernir donde va cada uno de ellos, una vez que le demos a ejecutar podemos ver
+                que el código no se ejecuta correctamente. Ahora toca arreglarlo (el 90% de la tarea de un informático
+                siempre es resolver errores)</p>
+            <p>Debemos tener en cuenta que todo debe ir indentado, es decir contenido uno dentro de otro, todo lo que se
+                abra debe ser cerrado.</p>
+
+            <div class="container-text-to-copy">
+
+                <div class="text-to-copy">
+                    <pre>
+halfKey1 = ['a','b','c','d','e','f','g','h','i'];
+halfKey2 = ['j','k','l','m','n'];
+
+completeKey = [];
+
+count = 0;
+
+a = 4;
+b = 6;
+resultado = 10;
+
+if resultado == a + b:
+
+    for x in range(2,len(halfKey1)-3):
+        
+        completeKey.insert(count, halfKey1[x]);
+        count+=1;
+        
+        for y in range(0,len(halfKey2)):
+           
+            completeKey.insert(count, halfKey2[y]);
+            count +=1;
+            
+    print(completeKey);       
+    
+else:
+    
+    print("Sigue intentándolo");
+                    </pre> 
+                </div>
+                <button class="btn btn-primary copy-button">Copiar</button>
+                
+            </div>
+            
+
+        </div>
+        <div class="card-body">
+            <p>👉<a href="#" class="card-link">Enlace asociado</a></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script>
+        //copy-paste container
+        $(document).ready(function () {
+            $('.copy-button').on('click', function () {
+                var $temp = $('<textarea>');
+                var $container = $(this).parent();
+                var $textToCopy = $container.find('.text-to-copy');
+                var $copiedText = $container.find('.copied-text');
+                $('body').append($temp);
+                $temp.val($textToCopy.text()).select();
+                document.execCommand('copy');
+                $temp.remove();
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

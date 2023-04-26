@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2em;
+    }
+
+    /*Estilos cards global*/
+    .card {
+        width: 40em;
+        background-color: rgba(60, 60, 60, 0.5);
+        color: white
+    }
+
+    /*copy-paste container*/
+    .text-to-copy {
+        border: solid black 2px;
+        padding: 1em;
+        box-sizing: border-box;
+        max-width: 20em;
+        max-height: 20em;
+        overflow: auto;
+        border-radius: 5px;
+        background-color: rgba(60, 60, 60, 1);
+    }
+
+    .card-title {
+        color: rgb(165, 17, 41);
+    }
+
+    .card-text>a {
+        text-decoration: none;
+        color: rgb(165, 17, 41);
+    }
+
+    .card-copy-buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card-copy-buttons>button>img{
+        height: 1.5em;
+        width: auto;
+    }
+
+    .container-text-to-copy {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+</style>
+
+<body>
+    <!--CARD 1-->
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Código HTML y CSS</h5>
+            <p class="card-text">Nos encontramos un código HTML y otro CSS los cuales deberemos copiar en <a
+                    href="http://cubicfactory.com/jseditor/welcome/130/edit" target="_blank">esta página</a>,
+                la primera prueba es discernir donde va cada uno de ellos, una vez que le demos a ejecutar podemos
+                ver
+                que el código no se ejecuta correctamente. Ahora toca arreglarlo (el 90% de la tarea de un
+                informático
+                siempre es resolver errores)</p>
+            <p>Debemos tener en cuenta que todo debe ir indentado, es decir contenido uno dentro de otro, todo lo
+                que se
+                abra debe ser cerrado.</p>
+
+            <div class="container-text-to-copy">
+
+                <div class="text-to-copy text-to-copy-one">
+                    <pre>
+&lt;!-- index.html --&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+&lt;title&gt;Las bases del código HTML&lt;/title&gt;
+&lt;link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"&gt; 
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;¿Qué es HTML?&lt;/h2&gt;
+&lt;br/&gt;
+&lt;p&gt;Aprenderemos como escribir la &lt;em&gt;estructura&lt;/em&gt; de un sitio web con HTML. &lt;i&gt;01010011&lt;/i&gt;&lt;/p&gt;
+&lt;figure class="post_image"&gt;&lt;img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/23763/image/dochtml3-new.svg" loading="lazy"&gt;&lt;/figure&gt;
+&lt;p&gt;Por ejemplo, no podemos escribir un párrafo desde el teclado en nuestro editor de texto y esperar que un navegador sepa sencillamente que esto es un párrafo. Los párrafos de texto tiene que estar dentro de la clasificación HTML correcta, un párrafo o un elemento &lt;code class="inline"&gt;&lt;p&gt;&lt;/code&gt; (cualquier señal de texto con buen aspecto como &lt;code class="inline"&gt;&lt;p&gt;&lt;/code&gt; aquí solamente muestra que este texto también es código)&lt;/p&gt;
+&lt;h2&gt;Elementos&lt;/h2&gt;
+&lt;br/&gt;
+&lt;p&gt;HTML está construid&lt;i&gt;0&lt;/i&gt; de &lt;em&gt;elementos&lt;/em&gt; que tienen significados importantes, como el elemento de párrafo que se menciono arriba. Cada elemento tiene &lt;i&gt;110&lt;/i&gt; una etiqueta de apertura (al principio) y una de cierre (al final), con el contenido del sitio escrito entre estas dos etiquetas.&lt;/p&gt; &lt;p&gt;Estas etiquetas de apertura  y &lt;i&gt;1111&lt;/i&gt; cierre para cada elemento están escritas dentro de corchetes angulares (como estos: &lt;code class="inline"&gt;&lt; &gt;&lt;/code&gt;, aunque la etiqueta de cierre tiene una barra inclinada (como esta: &lt;code class="inline"&gt;&lt;  /  &gt;&lt;/code&gt;).&lt;/p&gt;
+&lt;figure class="post_image"&gt;&lt;img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/23763/image/tags3.svg" loading="lazy"&gt;&lt;/figure&gt;
+
+&lt;h2&gt;Construyendo una Estructura&lt;/h2&gt;
+&lt;br/&gt;
+
+&lt;p&gt;Ah&lt;i&gt;0&lt;/i&gt;ra podemos añadir nuestra estructura.&lt;i&gt;1100&lt;/i&gt; Nuevamente, piensa en esto como cuando unes la estructura de un edificio, así que necesitamos establecer &lt;i&gt;1100&lt;/i&gt;la estructura en su lugar.&lt;/p&gt; 
+&lt;p&gt;La primera pieza de HTML que escribiremos es el &lt;code class="inline"&gt;&lt;!DOCTYPE html&gt;&lt;/code&gt; el cual le dice al navegador “¡Hey, éste es un documento HTML!”.&lt;/p&gt;
+&lt;pre class="brush: html noskimlinks noskimwords"&gt;&lt;!DOCTYPE html&gt;&lt;/pre&gt;
+
+&lt;p&gt;Luego, &lt;i&gt;1110100&lt;/i&gt;debajo de eso, necesitamos el elemento &lt;code class="inline"&gt;&lt;html&gt;&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class="brush: html noskimlinks noskimwords"&gt;&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;/html&gt;&lt;/pre&gt; &lt;p&gt;Todo lo demás será &lt;i&gt;anidado&lt;/i&gt; dentro de este elemento.&lt;/p&gt;
+&lt;p&gt;Hacemos el código de nuestro archivo HTML más fácil de leer poniendo elementos &lt;em&gt;anidados&lt;/em&gt; más a &lt;i&gt;0111&lt;/i&gt;la derecha.  Como esto:&lt;/p&gt;
+&lt;figure class="post_image"&gt;&lt;img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/23763/image/closelevel3.svg" loading="lazy"&gt;&lt;/figure&gt;
+
+&lt;p&gt;Es muy fácil olvidar cerrar las etiquetas, lo cual puede causar algunos &lt;em&gt;errores&lt;/em&gt; en nuestro sitio web. Queremos asegurarnos que &lt;i&gt;todas&lt;/i&gt; las etiquetas abiertas tienen una etiqueta de cierre.&lt;/p&gt;
+&lt;figure class="post_image"&gt;&lt;img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/23763/image/closetag3.svg" loading="lazy"&gt;&lt;/figure&gt;
+&lt;p&gt;¡Bueno, parece como si todo estuviera encerrado! Es el momento de empezar añadiendo contenido a esta&lt;i&gt;0111&lt;/i&gt; estructura super sólida que hemos creado.&lt;/p&gt; 
+
+&lt;h3&gt;Notas rápidas sobre Notas&lt;/h3&gt; 
+&lt;br&gt;
+&lt;p&gt;HTML nos deja escribir notas útiles dentro de nuestro trabajo. Estas notas no se muestran en nuestro sitio web, pero son magnificas para agregar pedacitos de información útiles para otros diseñadores que busquen en nuestro código. &lt;/p&gt;
+            
+&lt;pre class="brush: html noskimlinks noskimwords"&gt;&lt;!-- No debería ser visible desde el navegador pero si en el código --&gt;&lt;/pre&gt; 
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+                </div>
+                <div class="text-to-copy text-to-copy-two">
+                    <pre>
+/*CSS*/
+
+* {
+margin: 0px;
+padding: 0px;
+background-color:ivory;
+color: black;
+}    
+
+body {
+min-height: 100vh;
+font-family: 'Lucida Sans';
+color: #131520;
+font-size: 20px;
+font-weight: 400;
+} 
+
+.post_image{
+width: 70%;
+margin-left: 10%;
+margin-right: 10%;
+
+}
+
+h2,h3{
+text-align: center;
+font-weight: bold;
+margin-top: 3%;
+}
+
+p{
+text-align: justify;
+font-size: large;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 3%;
+margin-bottom: 3%;
+}
+
+pre{
+margin-left: 15%;
+margin-right: 10%;
+margin-top: 5%;
+margin-bottom: 5%;
+}
+
+i{
+font-size: x-large;
+color:cadetblue;
+}
+                </pre>
+                </div>
+            </div>
+        </div>
+        <div class="card-copy-buttons">
+            <button class="btn copy-button-one"><img src="img/icons/copy.png" alt=""></button>
+            <button class="btn copy-button-two"><img src="img/icons/copy.png" alt=""></button>
+        </div>
+
+
+
+        <div class="card-body">
+            <p>👉<a href="#" class="card-link">Enlace asociado</a></p>
+        </div>
+    </div>
+    <!---------------------->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Card structure
+        $(document).ready(function () {
+            $('.copy-button-one').on('click', function () {
+                var $temp = $('<textarea>');
+                var $container = $(this).closest('.card');
+                var $textToCopy = $container.find('.text-to-copy-one');
+                var $copiedText = $container.find('.copied-text');
+                $('body').append($temp);
+                $temp.val($textToCopy.text()).select();
+                document.execCommand('copy');
+                $temp.remove();
+            });
+        });
+
+
+        // Card structure
+        $(document).ready(function () {
+            $('.copy-button-two').on('click', function () {
+                var $temp = $('<textarea>');
+                var $container = $(this).closest('.card');
+                var $textToCopy = $container.find('.text-to-copy-two');
+                var $copiedText = $container.find('.copied-text');
+                $('body').append($temp);
+                $temp.val($textToCopy.text()).select();
+                document.execCommand('copy');
+                $temp.remove();
+            });
+        });
+    </script>
+</body>
+
+</html>

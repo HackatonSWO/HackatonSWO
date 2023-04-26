@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<style>
+
+  .modal-content{
+    background-color: rgba(69, 69, 69, .5);
+    color: white;
+
+  }
+  .carousel-item {
+    background-color: rgba(69, 69, 69, .5);
+    height: 30em;
+
+  }
+
+  .carousel-item-content {
+   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 4em;
+    height: 100%;
+    text-align: justify;
+  }
+</style>
+
+<body>
+
+
+
+
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Instrucciones
+  </button>
+
+
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel"><i class="fa-regular fa-newspaper"></i> Instrucciones</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!--------------------------->
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-item-content">
+                  <h5 class="mb-4"><i class="fa-solid fa-flag fa-xl"></i></h5>
+                  <p> Este hackathon consistirá en 4 pruebas de las cuales obtendréis por cada una una <i>flag</i>.</p>
+                  <p> Estas <i>flags</i> pueden estar encriptadas con diferentes sistemas.</p> 
+                  <p>Debereis decodificarlas para obterner la contraseña necesaria para desbloquear la cuenta atrás.</p>
+                  <br>
+                  <p><strong>NOTA:</strong><i> Una flag es un texto, a menudo codificado, que se usa a modo de clave.</i></p>
+                    
+                  
+                
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item-content">
+                  <h5 class="mb-4"><i class="fa-solid fa-cubes fa-2xl"></i></h5>
+                  <p>Podéis hacer las pruebas en el orden que queráis, pero tened en cuenta que las <i>flags</i> siguen el orden de los ejercicios.</p>
+                  <p>Si el caso se complica, hay pistas que me podéis pedir.</p>
+                  <p>Pero, ¡<strong>cuidado</strong>!, porque las pistas conllevan un coste.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item-content">
+                  <h5 class="mb-4"><i class="fa-solid fa-user-secret fa-2xl"></i></h5>
+                  <p>Los propios ejercicios traen pistas que pueden ayudaros a solucionarlos.</p>
+                  <p>Tampoco es necesario que sepáis programar, pero deberéis tener alma de investigador y fijaros en los más pequeños <strong>detalles</strong>.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item-content">
+                  <h5 class="mb-4"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></h5>
+                  <p>Parte del día a día de un informático es hacer búsquedas en internet.</p>
+                  <p>Sin embargo, <strong>hay que saber buscar bien </strong> para distinguir la información realmente útil.</p>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <div class="carousel-item-content">
+                  <h5 class="mb-4"><i class="fa-solid fa-keyboard fa-2xl"></i></h5>
+                  <p>El uso de internet está permitido, pero <strong>no internetéis buscar los problemas literalmente</strong>, porque no los encontraréis.</p>
+                  <p>Si lo usais, concentraros en buscar casos similares, ideas o herramientas para superar las pruebas.</p>
+                </div>
+              </div>
+
+
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!--------------------------->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $('.modal').modal('toggle')
+    });
+
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2em;
+    }
+
+    /*Estilos cards global*/
+    .card {
+        width: 40em;
+        background-color: rgba(35, 35, 35, 0.5);
+        color: white;
+        text-align: center;
+    }
+    .card-title {
+        color: red;
+    }
+
+    /*copy-paste container*/
+    .text-to-copy {
+  border: solid black 2px;
+  padding: 1em;
+  box-sizing: border-box;
+  max-width: 40em;
+  max-height: 20em;
+  overflow: auto;
+  border-radius: 5px;
+}
+    .container-text-to-copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+   
+    body{
+        background-color: rgb(62, 62, 62);
+    }
+    
+</style>
+
+<body>
+<!--CARD 3-->
+
+	<div class="card">
+		<div class="card-body">
+            <i class="fa-regular fa-envelope fa-2xl m-4"></i>
+			<h5 class="card-title mb-4">Mail searching</h5>
+			<p class="card-text">Hemos conseguido una copia local de los correos electrónicos donde está nuestra tercera flag, ahora toca agudizar el ojo y buscar cuál puede ser.</p>
+			<p class="card-text">Un trabajo muy importante para cualquier informático es leer y discernir, todo lo que encuentras no tiene por qué ser la solución, hay que fijarse bien, la verdad está ahí fuera.</p>
+			<div class="container-text-to-copy">
+				<p><i class="fa-solid fa-arrow-down"></i> Descarga el archivo y abrelo con tu navegador <i class="fa-solid fa-arrow-down"></i></p>
+				<a class="btn btn-primary" href="documentos/TakeOutGmail.mbox" download><i class="fa-solid fa-download"></i></a>
+			</div>
+		</div>
+	</div>
+<!---------------------->	
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script>
+        //copy-paste container
+        $(document).ready(function () {
+            $('.copy-button').on('click', function () {
+                var $temp = $('<textarea>');
+                var $container = $(this).parent();
+                var $textToCopy = $container.find('.text-to-copy');
+                var $copiedText = $container.find('.copied-text');
+                $('body').append($temp);
+                $temp.val($textToCopy.text()).select();
+                document.execCommand('copy');
+                $temp.remove();
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

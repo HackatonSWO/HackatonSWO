@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HackathonSWO</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="styles.css">
+
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+	<!-- Modal --------------------------------------------------------------------------------------------------------------------------->
+	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel"><i class="fa-regular fa-newspaper"></i>
+						Instrucciones</h5> <button type="button" class="btn-close" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body"> <!--------------------------->
+					<div id="carouselExampleCaptions" class="carousel slide">
+						<div class="carousel-indicators"> <button type="button"
+								data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+								aria-current="true" aria-label="Slide 1"></button> <button type="button"
+								data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+								aria-label="Slide 2"></button> <button type="button"
+								data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+								aria-label="Slide 3"></button> <button type="button"
+								data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+								aria-label="Slide 4"></button> <button type="button"
+								data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+								aria-label="Slide 5"></button> </div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="carousel-item-content">
+									<h5 class="mb-4"><i class="fa-solid fa-flag fa-xl"></i></h5>
+									<p> Este hackathon consistirá en 4 pruebas de las cuales obtendréis por cada una una
+										<i>flag</i>.
+									</p>
+									<p> Estas <i>flags</i> pueden estar encriptadas con diferentes sistemas.</p>
+									<p>Debereis decodificarlas para obterner la contraseña necesaria para desbloquear la
+										cuenta atrás.</p> <br>
+									<p><strong>NOTA:</strong><i> Una flag es un texto, a menudo codificado, que se usa a
+											modo de clave.</i></p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="carousel-item-content">
+									<h5 class="mb-4"><i class="fa-solid fa-cubes fa-2xl"></i></h5>
+									<p>Podéis hacer las pruebas en el orden que queráis, pero tened en cuenta que las
+										<i>flags</i> siguen el orden de los ejercicios.
+									</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="carousel-item-content">
+									<h5 class="mb-4"><i class="fa-solid fa-user-secret fa-2xl"></i></h5>
+									<p>Los propios ejercicios traen pistas que pueden ayudaros a solucionarlos.</p>
+									<p>Tampoco es necesario que sepáis programar, pero deberéis tener alma de
+										investigador y fijaros en los más pequeños <strong>detalles</strong>.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="carousel-item-content">
+									<h5 class="mb-4"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></h5>
+									<p>Parte del día a día de un informático es hacer búsquedas en internet.</p>
+									<p>Sin embargo, <strong>hay que saber buscar bien </strong> para distinguir la
+										información realmente útil.</p>
+								</div>
+							</div>
+							<div class="carousel-item text-center">
+								<div class="carousel-item-content">
+									<h5 class="mb-4"><i class="fa-solid fa-keyboard fa-2xl"></i></h5>
+									<p>El uso de internet está permitido, pero <strong>no internetéis buscar los
+											problemas literalmente</strong>, porque no los encontraréis.</p>
+									<p>Si lo usais, concentraros en buscar casos similares, ideas o herramientas para
+										superar las pruebas.</p>
+								</div>
+							</div>
+						</div> <button class="carousel-control-prev" type="button"
+							data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"> <span
+								class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+								class="visually-hidden">Previous</span> </button> <button class="carousel-control-next"
+							type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"> <span
+								class="carousel-control-next-icon" aria-hidden="true"></span> <span
+								class="visually-hidden">Next</span> </button>
+					</div> <!--------------------------->
+				</div>
+				<div class="modal-footer"> <button type="button" class="btn btn-secondary"
+						data-bs-dismiss="modal">Cerrar</button> </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal MEDIA DECODIFICADOR---------------------------------------------------------->
+
+	<div class="modal fade" id="decodificadorModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-body">
+					<form class="decode-form">
+						<div class="form-group mb-5">
+							<label for="code">Código:</label>
+							<textarea name="codigo" class="codigo" cols="80" rows="8"></textarea>
+							<div class="result"></div>
+						</div>
+						<button type="submit" class="btn boton-decoder decodificar">Decodificar</button>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--fin de Modal MEDIA DECODIFICADOR-->
+
+	<!--NAV-->
+	<nav class="navbar">
+		<a href="https://www.softwareone.com/es-es" class="navbar-link" target="_blank"><img
+				src="img/logo/swo_logo1.png" alt="logo"></a>
+		<!--botón media--><button class="btn desplazar media-desplazar bg-transparent" data-bs-toggle="modal"
+			data-bs-target="#decodificadorModal"><img src="img/icons/robot.png" alt=""></button>
+		<a href="#" class="navbar-link" id="instrucciones" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img
+				src="img/icons/info.png" alt="info" id="info"></a>
+	</nav>
+
+	<nav class="vertical-nav">
+		<div class="decode-container hide">
+			<form class="decode-form">
+				<div class="form-group mb-2">
+					<label for="code">Código:</label>
+					<textarea name="codigo" class="codigo" cols="80" rows="8"></textarea>
+					<div class="result"></div>
+				</div>
+				<button type="submit" class="btn boton-decoder decodificar">Decodificar</button>
+			</form>
+
+			<button class="btn desplazar"><img src="img/icons/robot.png" alt=""></button>
+		</div>
+	</nav>
+
+
+	<!--PORTADA-->
+	<div class="background background1">
+		<h1>Bienvenido al hackathon de SoftwareOne</h1>
+		<div class="chevron">
+			<a href="#begin"><img src="img/icons/chevron-abajo.png" alt="chevron" id="chevron"></a>
+		</div>
+	</div>
+
+	<!--PRIMER EJERCICIO-->
+	<div class="background background2" id="begin">
+		<!-- HTML Y CSS -->
+		<div class="card">
+			<img src="img/cards/html&css-card.jpg" class="card-img-top" alt="html-css">
+			<div class="card-body">
+				<h5 class="card-title">HTML y CSS</h5>
+				<p class="card-text">Nos encontramos un código HTML y otro CSS los cuales deberemos copiar
+					en <a href="http://cubicfactory.com/jseditor/welcome/130/edit" target="_blank">esta
+						página</a>.</p>
+				<p class="card-text">La prueba en este caso es discernir donde debe ir cada uno y encontrar las
+					<i>flags</i> ocultas en la página resultante.</p>
+				<div class="container-copy">
+					<div class="text-to-copy-one">
+						<pre>
+&lt;!-- index.html --&gt;
+				
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+&lt;title&gt;Las bases del código HTML&lt;/title&gt;
+&lt;link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"&gt; 
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+				
+&lt;h2&gt;¿Qué es HTML?&lt;/h2&gt;
+&lt;br/&gt;
+&lt;p&gt;Aprenderemos como escribir la &lt;em&gt;estructura&lt;/em&gt; de un sitio web con HTML. &lt;i&gt;01010011&lt;/i&gt;&lt;/p&gt;
+&lt;figure class="post_image"&gt;&lt;img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/23763/image/dochtml3-new.svg" loading="lazy"&gt;&lt;/figure&gt;
+&lt;p&gt;Por ejemplo, no podemos escribir un párrafo desde el teclado en nuestro editor de texto y esperar que un navegador sepa sencillamente que esto es un párrafo. Los párrafos de texto tiene que estar dentro de la clasificación HTML correcta, un párrafo o un elemento &lt;code class="inline"&gt;&lt;p&gt;&lt;/code&gt; (cualquier señal de texto con buen aspecto como &lt;code class="inline"&gt;&lt;p&gt;&lt;/code&gt; aquí solamente muestra que este texto también es código)&lt;/p&gt;
+&lt;h2&gt;Elementos&lt;/h2&gt;
+&lt;br/&gt;
+&lt;p&gt;HTML está construid&lt;i&gt;0&lt;/i&gt; de &lt;em&gt;elementos&lt;/em&gt; que tienen significados importantes, como el elemento de párrafo que se menciono arriba. Cada elemento tiene &lt;i&gt;110&lt;/i&gt; una etiqueta de apertura (al principio) y una de cierre (al final), con el contenido del sitio escrito entre estas dos etiquetas.&lt;/p&gt; &lt;p&gt;Estas etiquetas de apertura  y &lt;i&gt;1111&lt;/i&gt; cierre para cada elemento están escritas dentro de corchetes angulares (como estos: &lt;code class="inline"&gt;&lt; &gt;&lt;/code&gt;, aunque la etiqueta de cierre tiene una barra inclinada (como esta: &lt;code class="inline"&gt;&lt;  /  &gt;&lt;/code&gt;).&lt;/p&gt;
+&lt;figure class="post_image"&gt;&lt;img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/23763/image/tags3.svg" loading="lazy"&gt;&lt;/figure&gt;
+				
+&lt;h2&gt;Construyendo una Estructura&lt;/h2&gt;
+&lt;br/&gt;
+				
+&lt;p&gt;Ah&lt;i&gt;0&lt;/i&gt;ra podemos añadir nuestra estructura.&lt;i&gt;1100&lt;/i&gt; Nuevamente, piensa en esto como cuando unes la estructura de un edificio, así que necesitamos establecer &lt;i&gt;1100&lt;/i&gt;la estructura en su lugar.&lt;/p&gt; 
+&lt;p&gt;La primera pieza de HTML que escribiremos es el &lt;code class="inline"&gt;&lt;!DOCTYPE html&gt;&lt;/code&gt; el cual le dice al navegador “¡Hey, éste es un documento HTML!”.&lt;/p&gt;
+&lt;pre class="brush: html noskimlinks noskimwords"&gt;&lt;!DOCTYPE html&gt;&lt;/pre&gt;
+				
+&lt;p&gt;Luego, &lt;i&gt;1110100&lt;/i&gt;debajo de eso, necesitamos el elemento &lt;code class="inline"&gt;&lt;html&gt;&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class="brush: html noskimlinks noskimwords"&gt;&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;/html&gt;&lt;/pre&gt; &lt;p&gt;Todo lo demás será &lt;i&gt;anidado&lt;/i&gt; dentro de este elemento.&lt;/p&gt;
+&lt;p&gt;Hacemos el código de nuestro archivo HTML más fácil de leer poniendo elementos &lt;em&gt;anidados&lt;/em&gt; más a &lt;i&gt;0111&lt;/i&gt;la derecha.  Como esto:&lt;/p&gt;
+&lt;figure class="post_image"&gt;&lt;img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/23763/image/closelevel3.svg" loading="lazy"&gt;&lt;/figure&gt;
+				
+&lt;p&gt;Es muy fácil olvidar cerrar las etiquetas, lo cual puede causar algunos &lt;em&gt;errores&lt;/em&gt; en nuestro sitio web. Queremos asegurarnos que &lt;i&gt;todas&lt;/i&gt; las etiquetas abiertas tienen una etiqueta de cierre.&lt;/p&gt;
+&lt;figure class="post_image"&gt;&lt;img alt="" src="https://cms-assets.tutsplus.com/uploads/users/30/posts/23763/image/closetag3.svg" loading="lazy"&gt;&lt;/figure&gt;
+&lt;p&gt;¡Bueno, parece como si todo estuviera encerrado! Es el momento de empezar añadiendo contenido a esta&lt;i&gt;0111&lt;/i&gt; estructura super sólida que hemos creado.&lt;/p&gt; 
+				
+&lt;h3&gt;Notas rápidas sobre Notas&lt;/h3&gt; 
+&lt;br&gt;
+&lt;p&gt;HTML nos deja escribir notas útiles dentro de nuestro trabajo. Estas notas no se muestran en nuestro sitio web, pero son magnificas para agregar pedacitos de información útiles para otros diseñadores que busquen en nuestro código. &lt;/p&gt;
+							
+&lt;pre class="brush: html noskimlinks noskimwords"&gt;&lt;!-- No debería ser visible desde el navegador pero si en el código --&gt;&lt;/pre&gt; 
+&lt;/body&gt;
+&lt;/html&gt;
+								</pre>
+					</div>
+					<div class="text-to-copy-two">
+						<pre>
+/*CSS*/
+				
+* {
+margin: 0px;
+padding: 0px;
+background-color:ivory;
+color: black;
+}    
+				
+body {
+min-height: 100vh;
+font-family: 'Lucida Sans';
+color: #131520;
+font-size: 20px;
+font-weight: 400;
+} 
+				
+.post_image{
+width: 70%;
+margin-left: 10%;
+margin-right: 10%;				
+}
+				
+h2, h3{
+text-align: center;
+font-weight: bold;
+margin-top: 3%;
+}
+				
+p{
+text-align: justify;
+font-size: large;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 3%;
+margin-bottom: 3%;
+}
+				
+pre{
+margin-left: 15%;
+margin-right: 10%;
+margin-top: 5%;
+margin-bottom: 5%;
+}
+				
+i{
+font-size: x-large;
+color:cadetblue;
+}
+								</pre>
+					</div>
+				</div>
+			</div>
+			<div class="card-copy-buttons">
+				<button class="btn copy-button-one"><img src="img/icons/copy.png" alt=""></button>
+				<button class="btn copy-button-two"><img src="img/icons/copy.png" alt=""></button>
+			</div>
+		</div>
+	</div>
+
+	<!--PYTHON-->
+	<div class="background background3">
+		<div class="card">
+			<img src="img/cards/python-card.png" class="card-img-top" alt="python">
+			<div class="card-body">
+				<h5 class="card-title">Python</h5>
+				<p class="card-text">Algo ha pasado en este código y nos faltan datos para poder obtener la
+					<i>“flag”</i> de este ejercicio, pensad qué resultado necesitamos y cómo podríamos
+					llamar a los elementos necesarios.
+				</p>
+				<div class="container-text-to-copy">
+					<div class="text-to-copy text-to-copy-two">
+						<pre>
+j = ['01', '10', '00', '01', '00', '11', '10']
+k = ['01', '11', '00', '00', '11', '11', '01']
+l = ['10', '01', '10', '01', '01', '01']
+
+completeKey = ""
+
+count = 0
+
+a = 4
+b = 6
+resultado = 10
+
+if resultado == ?+?:
+	for x in j:
+		completeKey += x
+		count += 1
+
+		if count > 3 and count <= 15:
+			for y in k:
+				completeKey += y
+				count += 1
+
+				if count > 6 and count <= 11:
+					for z in l:
+						completeKey += z
+						count += 1
+
+	print(completeKey)
+
+else:
+	print("Sigue intentándolo")
+								</pre>
+					</div>
+				</div>
+			</div>
+			<div class="card-copy-buttons">
+				<button class="btn copy-button-two"><img src="img/icons/copy.png" alt=""></button>
+			</div>
+			<div class="card-body">
+				<p>👉 <a href="https://www.online-python.com/JFiRdY8zLG" target="_blank" class="card-link">Usa el
+						siguiente enlace para la resolución del ejercicio.</a></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- MAIL & REVERSE-->
+	<div class="background background4">
+		<!--MAIL-->
+		<div class="card">
+			<img src="img/cards/mail-card.jpg" class="card-img-top" alt="mail">
+			<div class="card-body">
+				<h5 class="card-title">Mail searching</h5>
+				<p class="card-text">Hemos conseguido una copia local de los correos electrónicos donde está nuestra
+					tercera flag, ahora toca agudizar el ojo y buscar cuál puede ser.</p>
+				<p class="card-text">Un trabajo muy importante para cualquier informático es leer y discernir, todo lo
+					que encuentras no tiene por qué ser la solución, hay que fijarse bien, la verdad está ahí fuera.</p>
+				<div class="container-text-to-copy arrow-text">
+					<p><i class="fa-solid fa-arrow-down"></i> Descarga el archivo y abrelo con tu navegador <i
+							class="fa-solid fa-arrow-down"></i></p>
+					<a class="btn btn-primary" href="documentos/TakeOutGmail.mbox" download><i
+							class="fa-solid fa-download"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- REVERSE -->
+		<div class="card" id="exercise4">
+			<img src="img/cards/reverse.jpg" class="card-img-top" alt="reverse">
+			<div class="card-body centrar">
+				<h5 class="card-title">Ingeniería inversa</h5>
+				<p class="card-text">Una vez hemos pasado un software por un programa decodificador podemos
+					tener acceso
+					a su código fuente,
+					en este código ha sido escondida nuestra última flag pero, atención, no es tan fácil
+					como parece,
+					creo que hay más información a la que tenemos que prestar atención.</p>
+				<p>👉 <a href="https://github.com/hackathon-swo/goldMedal" target="_blank" class="card-link">Click aquí
+						para ir a la página del último ejercicio</a></p>
+				<p>👉<a href="https://cryptii.com/pipes/rot13-decoder" target="_blank" class="card-link">Decodificador ROT-13</a></p>
+			</div>
+		</div>
+	</div>
+
+	<!--FOOTER-->
+	<footer class="text-center text-white" style="background-color: rgb(165, 17, 41);">
+		<div class="container pt-3">
+			<section class="mb-4">
+				<a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/softwareone/"
+					role="button" data-mdb-ripple-color="dark" target="_blank"><img src="img/icons/instagram.png"
+						alt="instagram"></a>
+				<a class="btn btn-link btn-floating btn-lg text-dark m-1"
+					href="https://www.linkedin.com/company/softwareone/?originalSubdomain=nl" role="button"
+					data-mdb-ripple-color="dark" target="_blank"><img src="img/icons/linkedin.png" alt="linkedin"></a>
+			</section>
+		</div>
+		<div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);" id="footer_text">
+			<span class="text-dark">© SWO Academy León - Santiago de Compostela. 2023</span>
+		</div>
+	</footer>
+
+</body>
+
+</html>
